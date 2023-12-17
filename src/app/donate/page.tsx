@@ -5,7 +5,7 @@ export default function Home() {
     <main>
       <Navbar />
       <div className="navbar-padding"></div>
-      <div>About Us</div>
+      <div>Donate</div>
     </main>
   )
 }

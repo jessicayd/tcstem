@@ -1,0 +1,107 @@
+/* GLOBAL */
+:root {
+    --dark-blue-color: #295B7A;
+    --mid-blue-color: #C9EBFF;
+    --light-blue-color: #E7F6FF;
+    --branding-color: #38B6FF;
+    --dark-branding-color: #0F7EBE;
+    --default-font-family: 'Readex Pro', sans-serif;
+}
+
+body {
+    color: var(--dark-blue-color);
+    font-family: var(--default-font-family);
+    text-align: center;
+}
+
+/* navbar */
+.navbar {
+    backdrop-filter: blur(10px);
+    position: fixed;
+    width: 88%;
+    padding-left: 6%;
+    padding-right: 6%;
+    height: 80px;
+    top:0;
+    left:0;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-child {
+    padding:1rem;
+    align-items: center;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-link {
+    text-decoration: none;
+    color: var(--dark-blue-color);
+    font-family: var(--default-font-family);
+    padding:0.5rem 0.75rem 0.5rem 0.75rem;
+    margin-left:1rem;
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+}
+
+.navbar-title {
+    text-decoration: none;
+    color: var(--dark-branding-color);
+    font-family: var(--default-font-family);
+    font-weight:bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-link.active {
+    background-color: var(--mid-blue-color);
+    border-radius:1.5em;
+}
+
+.navbar-link:not(.active):hover {
+    background-color: var(--light-blue-color);
+    border-radius:1.5em;
+}
+
+.navbar-padding {
+    margin:100px;
+}
+
+/* font rules*/
+@font-face {
+    font-family: 'Readex Pro';
+    src: url('../fonts/ReadexPro-Bold.ttf') format('truetype'); 
+    font-weight: bold;
+  }
+  
+  @font-face {
+    font-family: 'Readex Pro';
+    src: url('../fonts/ReadexPro-ExtraLight.ttf') format('truetype'); 
+    font-weight: 200; 
+  }
+  
+  @font-face {
+    font-family: 'Readex Pro';
+    src: url('../fonts/ReadexPro-Light.ttf') format('truetype'); 
+    font-weight: 300;
+  }
+  
+  @font-face {
+    font-family: 'Readex Pro';
+    src: url('../fonts/ReadexPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+  }
+  
+  @font-face {
+    font-family: 'Readex Pro';
+    src: url('../fonts/ReadexPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+  }
+  
+  @font-face {
+    font-family: 'Readex Pro';
+    src: url('../fonts/ReadexPro-SemiBold.ttf') format('truetype');
+    font-weight: 600; 
+  }
