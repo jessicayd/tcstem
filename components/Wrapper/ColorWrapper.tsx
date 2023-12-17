@@ -17,7 +17,7 @@ const ColorWrapper: React.FC<ColorWrapperProps> = ({ children, blue }) => {
         const windowHeight = window.innerHeight || document.documentElement.clientHeight;
         const threshold = windowHeight * 0.9;
 
-        if (rect.top < threshold) {
+        if (rect.top < threshold && rect.bottom > 0) {
           wrapperRef.current.classList.add("active");
         } else {
           wrapperRef.current.classList.remove("active");
