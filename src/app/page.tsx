@@ -8,7 +8,9 @@ export default function Home() {
     <main>
       <Navbar />
       <div className="navbar-padding"></div>
-      <ColorWrapper children=<div>homeeee</div> blue={false}/>
+      <ColorWrapper blue={false}>
+        <div>homeee</div>
+      </ColorWrapper>
       <ColorWrapper blue={true}><Socials/></ColorWrapper>
       <ColorWrapper blue={false}><Footer/></ColorWrapper>
     </main>
