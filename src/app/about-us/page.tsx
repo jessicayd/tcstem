@@ -47,8 +47,8 @@ export default function Home() {
           <iframe src="https://player.vimeo.com/video/356008057?h=1a61af2158" title="Vimeo video player" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen></iframe>
         </div>
       </ColorWrapper>
-      <ColorWrapper children=<Socials /> blue={false}/>
-      <ColorWrapper children=<Footer /> blue={true}/>
+      <ColorWrapper blue={false}><Socials/></ColorWrapper>
+      <ColorWrapper blue={true}><Footer/></ColorWrapper>
     </main>
   )
 }
