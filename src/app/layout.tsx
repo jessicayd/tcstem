@@ -4,7 +4,7 @@ import '../../styles/styles.css'
 
 export const metadata: Metadata = {
   title: 'Teach Children STEM',
-  description: 'A nonprofit dedicated to learning.',
+  description: 'A nonprofit dedicated to teaching.',
 }
 
 export default function RootLayout({
