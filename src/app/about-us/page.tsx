@@ -41,9 +41,9 @@ export default function Home() {
       <ColorWrapper blue={true}> 
         <div className="aboutus-yearbooks">
           <h2>TCSTEM Yearbooks</h2>
-          <iframe src="https://www.youtube.com/embed/38nfrWa3A9I?si=PNQ5nLuaYMp78S6g" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-          <iframe src="https://www.youtube.com/embed/dX9s5xLOCyk?si=27H3gWzggMmhmvU1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-          <iframe src="https://www.youtube.com/embed/2OMaHJB9v1E?si=D2BpyfZISZsoIwu-" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
+          <iframe src="https://www.youtube.com/embed/38nfrWa3A9I?si=PNQ5nLuaYMp78S6g" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+          <iframe src="https://www.youtube.com/embed/dX9s5xLOCyk?si=27H3gWzggMmhmvU1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+          <iframe src="https://www.youtube.com/embed/2OMaHJB9v1E?si=D2BpyfZISZsoIwu-" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
           <iframe src="https://player.vimeo.com/video/356008057?h=1a61af2158" title="Vimeo video player" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen></iframe>
         </div>
       </ColorWrapper>
