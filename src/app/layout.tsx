@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import type { Metadata } from 'next'
 import '../../styles/styles.css'
 
@@ -15,7 +16,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <link rel="icon" href="/icon.ico" sizes="any" />
-      <body>{children}</body>
+      <body>
+        {children}
+        <Analytics />
+      </body>
     </html>
   )
 }
