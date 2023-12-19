@@ -1,6 +1,6 @@
 ## TCSTEM
 
-A non-profit organization dedicated to teaching. Currenty live at [https://tcstem-jessicayds-projects.vercel.app/](https://tcstem-jessicayds-projects.vercel.app/)
+A non-profit organization dedicated to teaching. Currenty live at [[https://tcstem-jessicayds-projects.vercel.app/](https://tcstem.vercel.app/)]
 
 ## Getting Started
 
