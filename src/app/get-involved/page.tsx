@@ -30,7 +30,7 @@ export default function Home() {
           <ul>
             <li>Nice people</li>
             <li>People who will have the time to commit</li>
-            <li>No background in teaching is necessary — we'll teach you the rest!</li>
+            <li>No background in teaching is necessary — we&apos;ll teach you the rest!</li>
           </ul>
         </div>
       </ColorWrapper>
