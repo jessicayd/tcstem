@@ -269,3 +269,27 @@ h3 {
     src: url('../fonts/ReadexPro-SemiBold.ttf') format('truetype');
     font-weight: 600; 
   }
+
+
+/* ------------------------------------------------------------------------ */
+
+/* home page */
+.home-banner {
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+.home-banner-text {
+    flex: 1;
+    text-align: left;;
+}
+
+.home-banner-img {
+    margin-left: 20px;
+}
+
+.home-impact {
+    display: flex;
+    justify-content: space-evenly;
+}
