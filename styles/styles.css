@@ -314,8 +314,39 @@ h3 {
 }
 
 .faq {
-    margin: 0 10% 0 10%;
+    margin: 0 20% 0 20%;
 }
+
+.faq h2 {
+    margin-bottom:10px;
+}
+
+.accordion-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align:left;
+    cursor:pointer;
+    padding: 20px;
+    background-color: white;
+    transition: background-color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom:0.5px solid var(--dark-blue-color);
+}
+
+.accordion-item.active .accordion-question {
+    background-color: var(--light-blue-color);
+    border-bottom:none;
+}
+
+.accordion-answer {
+    text-align:left;
+    padding:10px 25px 10px 15px;
+    margin:15px;
+    margin-left:25px;
+    border-left:0.5px solid var(--dark-blue-color);
+}
+
+
 
 /* ------------------------------------------------------------------------ */
 
