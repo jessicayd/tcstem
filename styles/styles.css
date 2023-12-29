@@ -27,6 +27,29 @@ h1 {
     margin:0;
 }
 
+h6 {
+    font-size: var(--title-font-size);
+    padding:0;
+    margin:0;
+}
+
+.h1_colored {
+    font-size: var(--header-font-size);
+    padding-left: 10%;
+    padding-bottom: 5%;
+    margin:0;
+    color: #38B6FF;
+    text-align: left;
+    font-weight: bold;
+
+}
+.h1-title {
+    font-size: var(--header-font-size);
+    padding-left: 10%;;
+    margin:0;
+    text-align: left;
+}
+
 h2 {
     font-size: var(--sub-font-size);
     padding:0;
@@ -41,7 +64,66 @@ h3 {
     font-weight:500;
 }
 
+/* ------------------------------------------------------------------------ */
+/* home */
+.home-testimonials {
+    display:grid;
+    margin: 0 10% 0 10%;
+    text-align: left;
+    line-height: 1.8;
+    
+}
 
+#text-content {
+    padding: 20px;
+}
+
+#slideshow {
+    margin-top: 20px;
+}
+.home-imgs img {
+    height:40%;
+    width: 85%;
+    margin:10%;
+    border-radius: 20px;
+}
+.grid-container1 {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+    grid-gap: 20px;
+    place-items: center;
+
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    place-items: center;
+
+}
+
+.home-testimonials div {
+    margin:10px;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+.home-mission {
+    display:grid;
+    margin: 0 10% 0 10%;
+    text-align: center;
+    line-height: 1.8; 
+}
+
+.home-mission div {
+    margin:10px;
+}
 /* ------------------------------------------------------------------------ */
 
 /* navbar */
@@ -215,6 +297,7 @@ h3 {
 .aboutus-imgs img {
     height:250px;
     margin:20px;
+    border-radius: 10px;
 }
 
 .aboutus-yearbooks {
