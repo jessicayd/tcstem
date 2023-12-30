@@ -1,11 +1,9 @@
 import Navbar from '../../components/Frame/Navbar'
+import MobileNavbar from '../../components/Frame/MobileNavbar'
 import Socials from '../../components/Frame/Socials'
-import Footer from '../../components/Frame/Footer'
 import ColorWrapper from '../../components/Wrapper/ColorWrapper'
 import Slideshow from '../../components/Slideshow'
 import Counter from '../../components/Counter'
-import Link from "next/link";
-
 
 export default function Home() {
 
@@ -19,13 +17,14 @@ export default function Home() {
   return (
     <main>
       <Navbar />
+      <MobileNavbar />
       <div className="navbar-padding"></div>
       <ColorWrapper blue={false}>
         <div className="grid-container1">
           <div>
             <h1>Making STEM Education<div className="h1_colored">FREE FOR ALL</div></h1>
             <div >Since 2019</div>
-            <Link target="_blank" href="https://discord.com/invite/yCBHy2r7pb" className="default-button">Join our Discord server!</Link>
+            <a target="_blank" href="https://discord.com/invite/yCBHy2r7pb" className="default-button">Join our Discord server!</a>
           </div>
           <Slideshow photos={slideshowImgs} />
         </div>
@@ -48,14 +47,12 @@ export default function Home() {
 
       <ColorWrapper blue={false}>
         <div className="home-mission">
-          <h2>Our Mission</h2>
+          <h2>Our Goals</h2>
           <div>teach. share. empower.</div>
-          <div> At TCSTEM we just have two goals:
-            <ol>
-              <li>Combat STEM inequity (supply the needs of underprivileged students and mentor them from education to industry)</li>
-              <li>Revolutionize the way STEM education is delivered to students (Lecture-based to Hands-on/Project/Team Oriented Learning). We want our students to have fun learning!</li>
-            </ol>
-          </div>
+          <ol>
+            <li>Combat STEM inequity (supply the needs of underprivileged students and mentor them from education to industry)</li>
+            <li>Revolutionize the way STEM education is delivered to students (Lecture-based to Hands-on/Project/Team Oriented Learning). We want our students to have fun learning!</li>
+          </ol>
         </div>
       </ColorWrapper>
       <ColorWrapper blue={true}> 
@@ -82,16 +79,16 @@ export default function Home() {
       <ColorWrapper blue={false}>
         <h2>Featured in</h2>
         <div className="feature-img">
-          <a href="https://www.google.com/url?q=https%3A%2F%2Fflhsnews.com%2F7495%2Fnews%2Ftcstem-delivers-stem-education-to-underprivileged-students%2F&sa=D&sntz=1&usg=AOvVaw0mu6CImETK0GBAQEi-nLfg">
+          <a className="large-feature" target="_blank" href="https://flhsnews.com/7495/news/tcstem-delivers-stem-education-to-underprivileged-students/">
             <img src="francislewis.jpeg" alt="francis lewis logo"/>
+          </a>
+          <a className="small-feature" target="_blank" href="https://flhsnews.com/7495/news/tcstem-delivers-stem-education-to-underprivileged-students/">
+            <img src="francislewis_small.jpeg" alt="francis lewis logo"/>
           </a>
           </div>
       </ColorWrapper>
       <ColorWrapper blue={true}><Socials/></ColorWrapper>
-      <ColorWrapper blue={false}><Footer/></ColorWrapper>
     </main>
   )
 }
 
-
-// test hehe

@@ -10,7 +10,8 @@ export default function NavBar() {
     return (
       <nav className="navbar">
         <div className="navbar-child">
-          <Link href="/" className="navbar-title"><Image src="/icon.png" alt="Icon" width={35} height={35}/>&nbsp;&nbsp;Teach Children STEM</Link>
+          <Link href="/" className="navbar-title large-title"><Image src="/icon.png" alt="Icon" width={35} height={35}/>&nbsp;&nbsp;Teach Children STEM</Link>
+          <Link href="/" className="navbar-title small-title"><Image src="/icon.png" alt="Icon" width={35} height={35}/>&nbsp;&nbsp;TCSTEM</Link>
         </div>
         <div className="navbar-child">
           <Link href="/" className={`navbar-link ${pathname === '/' ? 'active' : ''}`}>Home</Link>

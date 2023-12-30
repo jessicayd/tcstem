@@ -1,13 +1,13 @@
 import Navbar from '../../../components/Frame/Navbar'
+import MobileNavbar from '../../../components/Frame/MobileNavbar'
 import Socials from '../../../components/Frame/Socials'
 import ColorWrapper from '../../../components/Wrapper/ColorWrapper'
-import Footer from '../../../components/Frame/Footer'
-import Link from "next/link";
 
-export default function Home() {
+export default function Donate() {
   return (
     <main>
       <Navbar />
+      <MobileNavbar />
       <div className="navbar-padding"></div>
       <ColorWrapper blue={false}> 
         <h1>Donate</h1>
@@ -17,7 +17,7 @@ export default function Home() {
         <div className="donate">
           <h2>Anything can make a difference.</h2>
           <div>We are a high school and college-run organization that aims to provide FREE and engaging STEM education to students, regardless of social and economic backgrounds. This summer, we will be using donations to buy materials for our programs, produce better videos, and build fun and engaging kits to underprivileged students, primarily around NYC and potentially other areas if funding allows. TCSTEM is a nonprofit program that is run by 40+ college and high school students all around the US and fiscally sponsored by Hack+, a 501(c)(3) certified nonprofit organization. <strong>EIN: 92-0332846</strong></div>
-          <Link target="_blank" href="https://secure.givelively.org/donate/hackplus/teach-children-stem" className="default-button">Donate today!</Link>
+          <a target="_blank" href="https://secure.givelively.org/donate/hackplus/teach-children-stem" className="default-button">Donate today!</a>
         </div>
       </ColorWrapper>
 
@@ -26,7 +26,6 @@ export default function Home() {
       </ColorWrapper>
 
       <ColorWrapper blue={true}><Socials/></ColorWrapper>
-      <ColorWrapper blue={false}><Footer/></ColorWrapper>
     </main>
   )
 }

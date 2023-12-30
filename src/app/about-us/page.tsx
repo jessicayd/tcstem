@@ -1,12 +1,13 @@
 import Navbar from '../../../components/Frame/Navbar'
+import MobileNavbar from '../../../components/Frame/MobileNavbar'
 import Socials from '../../../components/Frame/Socials'
 import ColorWrapper from '../../../components/Wrapper/ColorWrapper'
-import Footer from '../../../components/Frame/Footer'
 
-export default function Home() {
+export default function AboutUs() {
   return (
     <main>
       <Navbar />
+      <MobileNavbar />
       <div className="navbar-padding"></div>
       <ColorWrapper blue={false}> 
         <div className="aboutus-mission">
@@ -48,7 +49,6 @@ export default function Home() {
         </div>
       </ColorWrapper>
       <ColorWrapper blue={false}><Socials/></ColorWrapper>
-      <ColorWrapper blue={true}><Footer/></ColorWrapper>
     </main>
   )
 }

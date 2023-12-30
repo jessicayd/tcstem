@@ -1,13 +1,13 @@
 import Navbar from '../../../components/Frame/Navbar'
+import MobileNavbar from '../../../components/Frame/MobileNavbar'
 import Socials from '../../../components/Frame/Socials'
 import ColorWrapper from '../../../components/Wrapper/ColorWrapper'
-import Footer from '../../../components/Frame/Footer'
-import Link from "next/link";
 
-export default function Home() {
+export default function Partners() {
   return (
     <main>
       <Navbar />
+      <MobileNavbar />
       <div className="navbar-padding"></div>
       <ColorWrapper blue={false}> 
         <h1>Our Partners</h1>
@@ -16,8 +16,8 @@ export default function Home() {
       <ColorWrapper blue={true}> 
         <h2>Partnerships</h2>
         <div className="partner-imgs">
-          <Link target="_blank" href="https://joinjuno.com/"><img src="partner1.png" alt="juno logo"/></Link>
-          <Link target="_blank" href="https://www.wavelf.org/"><img src="partner2.png" alt="wave learning festival logo"/></Link>
+          <a target="_blank" href="https://joinjuno.com/"><img src="partner1.png" alt="juno logo"/></a>
+          <a target="_blank" href="https://www.wavelf.org/"><img src="partner2.png" alt="wave learning festival logo"/></a>
           <img src="partner3.png" alt="stem power logo" />
         </div>
         <br></br>
@@ -32,12 +32,11 @@ export default function Home() {
         <div className="partner-message">
           <h3>Interested in working with us?</h3>
           <div>Email us at <a href="mailto:teachchildrenstem@gmail.com">teachchildrenstem@gmail.com</a> if interested!</div>
-          <Link target="_blank" href="https://drive.google.com/file/d/1MKFZ1Zpx_InzeiVFtKzYg5EsV51l1GNl/view?usp=sharing" className="default-button">View our Sponsorship Prospectus</Link>
+          <a target="_blank" href="https://drive.google.com/file/d/1MKFZ1Zpx_InzeiVFtKzYg5EsV51l1GNl/view?usp=sharing" className="default-button">View our Sponsorship Prospectus</a>
         </div>
       </ColorWrapper>
 
       <ColorWrapper blue={true}><Socials/></ColorWrapper>
-      <ColorWrapper blue={false}><Footer/></ColorWrapper>
     </main>
   )
 }

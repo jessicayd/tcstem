@@ -1,11 +1,10 @@
 import Navbar from '../../../components/Frame/Navbar'
+import MobileNavbar from '../../../components/Frame/MobileNavbar'
 import Socials from '../../../components/Frame/Socials'
 import ColorWrapper from '../../../components/Wrapper/ColorWrapper'
-import Footer from '../../../components/Frame/Footer'
 import Accordion from '../../../components/Accordion'
-import Link from "next/link";
 
-export default function Home() {
+export default function ConnectWithUs() {
 
   const faq = [
     {
@@ -46,6 +45,7 @@ export default function Home() {
   return (
     <main>
       <Navbar />
+      <MobileNavbar />
       <div className="navbar-padding"></div>
       <ColorWrapper blue={false}> 
         <h1>Connect With Us</h1>
@@ -54,7 +54,7 @@ export default function Home() {
       <ColorWrapper blue={true}> 
         <div className="connect-message">
           <h2>Get in touch!</h2>
-          <div>For any additional questions or concerns, please contact us by email, at <a href="mailto:teachchildrenstem@gmail.com">teachchildrenstem@gmail.com</a>, or through social media (can be found at the footer of this page). If you are interested in partnering with us, please view the partnership information in on <Link href="/our-partners">Our Partners</Link> page.</div>
+          <div>For any additional questions or concerns, please contact us by email, at <a href="mailto:teachchildrenstem@gmail.com">teachchildrenstem@gmail.com</a>, or through social media (can be found at the footer of this page). If you are interested in partnering with us, please view the partnership information in on <a href="/our-partners">Our Partners</a> page.</div>
         </div>
       </ColorWrapper>
 
@@ -66,7 +66,6 @@ export default function Home() {
       </ColorWrapper>
 
       <ColorWrapper blue={true}><Socials/></ColorWrapper>
-      <ColorWrapper blue={false}><Footer/></ColorWrapper>
     </main>
   )
 }

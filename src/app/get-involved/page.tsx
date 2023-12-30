@@ -1,13 +1,13 @@
 import Navbar from '../../../components/Frame/Navbar'
+import MobileNavbar from '../../../components/Frame/MobileNavbar'
 import Socials from '../../../components/Frame/Socials'
 import ColorWrapper from '../../../components/Wrapper/ColorWrapper'
-import Footer from '../../../components/Frame/Footer'
-import Link from "next/link";
 
-export default function Home() {
+export default function GetInvolved() {
   return (
     <main>
       <Navbar />
+      <MobileNavbar />
       <div className="navbar-padding"></div>
       <ColorWrapper blue={false}> 
         <h1>Get Involved</h1>
@@ -49,12 +49,11 @@ export default function Home() {
       <ColorWrapper blue={false}>
         <div className="partner-message">
           <h3>Interested in learning more?</h3>
-          <div>If you have any questions, please email us at <a href="mailto:teachchildrenstem@gmail.com">teachchildrenstem@gmail.com</a> or DM us at <Link target="_blank" href="https://www.instagram.com/teachchildrenstem">@teachchildrenstem</Link> on Instagram.</div>
+          <div>If you have any questions, please email us at <a href="mailto:teachchildrenstem@gmail.com">teachchildrenstem@gmail.com</a> or DM us at <a target="_blank" href="https://www.instagram.com/teachchildrenstem">@teachchildrenstem</a> on Instagram.</div>
         </div>
       </ColorWrapper>
 
       <ColorWrapper blue={true}><Socials/></ColorWrapper>
-      <ColorWrapper blue={false}><Footer/></ColorWrapper>
     </main>
   )
 }

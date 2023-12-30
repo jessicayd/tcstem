@@ -10,6 +10,7 @@
     --sub-font-size: 36px;
     --sub2-font-size: 22px;
     --body-font-size: 16px;
+    --default-margin: 10%;
 }
 
 body {
@@ -54,7 +55,8 @@ h3 {
 /* ------------------------------------------------------------------------ */
 /* home */
 .slideshow-img {
-    height:400px;
+    width: 100%;
+    height:auto;
     transition: opacity 0.3s ease-in-out;
     opacity:0;
 }
@@ -72,8 +74,8 @@ h3 {
 .grid-container1 {
     margin: 0 5% 0 5%;
     display: grid;
-    grid-template-columns: 30% 50%;
-    grid-gap: 20%;
+    grid-template-columns: 40% 50%;
+    grid-gap: 10%;
     place-items: center;
 }
 
@@ -90,7 +92,7 @@ h3 {
 }
 
 .grid-container2 {
-    margin: 0 10% 0 10%;
+    margin: 0 var(--default-margin) 0 var(--default-margin);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
@@ -104,44 +106,52 @@ h3 {
 
 
 .home-testimonials {
-    margin: 0 10% 0 10%;
+    margin: 0 var(--default-margin) 0 var(--default-margin);
     line-height: 1.8;
 }
 
 .home-testimonials div > div:nth-child(2) {
     text-align: right;
     font-size:14px;
+    line-height:1.2;
+    padding-left:30%;
 }
 
 .home-testimonials > div {
     text-align: left;
-    margin:15px;
+    margin:15px 0 15px 0 ;
 }
 
 
 .home-mission {
-    margin: 0 10% 0 10%;
+    margin: 0 var(--default-margin) 0 var(--default-margin);
 }
 
-.home-mission > div:nth-child(2) {
+.home-mission > div {
     font-size: 14px;
-    margin:5px;
     margin-bottom:20px;
 }
 
-.home-mission > div:nth-child(3) {
+.home-mission > ol {
     text-align: left;
-    line-height: 1.8; 
+    line-height: 1.5; 
+}
+
+.home-mission > ol > li {
+    margin:5px;
 }
 
 .feature-img img {
     width: 90%;
-    margin:20px;
+    margin-top:20px;
     transition: border-radius 0.4s ease;
     border-radius:5px;
 }
+.small-feature {
+    display:none;
+}
 .feature-img img:hover {
-    border-radius:25px;
+    border-radius:20px;
 }
 /* ------------------------------------------------------------------------ */
 
@@ -160,6 +170,68 @@ h3 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     background-color: white;
     z-index: 1000;
+}
+
+.mobile-navbar {
+    display:none;
+}
+
+.mobile-bar {
+    width: 88%;
+    padding-left: 6%;
+    padding-right: 6%;
+    margin-top:30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sidebar {
+    padding:5%;
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+    position: fixed;
+    top: 0;
+    left: -100%; 
+    width: 90%;
+    height: 100%;
+    background-color: white;
+    transition: left 0.3s ease; 
+    overflow-y: auto; 
+    z-index:1000;
+  }
+
+  .sidebar-button {
+    z-index:1001;
+    height:fit-content;
+    text-decoration: none;
+    background:none;
+    border:none;
+  }
+
+  .sidebar-button img {
+    width:20px;
+  }
+  
+  .sidebar.open {
+    left: 0; 
+  }
+
+.navbar-mobile-link {
+    text-decoration: none;
+    color: var(--dark-blue-color);
+    font-family: var(--default-font-family);
+    padding:0.5rem 0.75rem 0.5rem 0.75rem;
+    margin-left:0.5rem;
+    font-size: 26px;
+    transition: background-color 0.3s ease, border-radius 0.3s ease;
+    width:fit-content;
+}
+
+.navbar-mobile-link.active {
+    background-color: var(--mid-blue-color);
+    border-radius:1.5em;
 }
 
 .navbar-child {
@@ -187,6 +259,10 @@ h3 {
     font-size: 17px;
     display: flex;
     align-items: center;
+}
+
+.small-title {
+    display:none;
 }
 
 .navbar-link.active {
@@ -224,6 +300,7 @@ h3 {
 
 /* footer */
 .footer {
+    margin:10px;
     font-size:12px;
 }
 
@@ -255,6 +332,7 @@ h3 {
 /* button */
 
 .default-button {
+    line-height:1.2;
     margin-top:20px;
     color: white;
     border-radius:2em;
@@ -265,7 +343,7 @@ h3 {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     cursor:pointer;
     transition: background-color 0.5s ease;
-    font-size:15px;
+    font-size:var(--body-font-size);
     text-decoration: none;
     max-width: fit-content;
 }
@@ -281,7 +359,7 @@ h3 {
 
 .aboutus-mission {
     display:grid;
-    margin: 0 10% 0 10%;
+    margin: 0 var(--default-margin) 0 var(--default-margin);
     grid-template-columns: 30% 55%;
     align-items:center;
     gap: 10%;
@@ -297,7 +375,7 @@ h3 {
 
 .aboutus-story {
     display:grid;
-    margin: 0 10% 0 10%;
+    margin: 0 var(--default-margin) 0 var(--default-margin);
     text-align: left;
     line-height: 1.8;
 }
@@ -315,13 +393,14 @@ h3 {
 }
 
 .aboutus-imgs img {
-    height:250px;
-    margin:20px;
+    width:30%;
+    aspect-ratio: 1/1;
+    margin:1%;
     border-radius: 10px;
 }
 
 .aboutus-yearbooks {
-    margin: 0 10% 0 10%;
+    margin: 0 var(--default-margin) 0 var(--default-margin);
 }
 
 .aboutus-yearbooks h2 {
@@ -330,8 +409,8 @@ h3 {
 
 .aboutus-yearbooks iframe {
     margin:20px;
-    width:450px;
-    height:250px;
+    width:40%;
+    aspect-ratio: 3 / 2;
     border: none;
 }
 
@@ -339,17 +418,30 @@ h3 {
 /* ------------------------------------------------------------------------ */
 
 /* our partners */
+.partner-imgs {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .partner-imgs img {
-    height:125px;
+    max-width: 300px;
+    max-height: 125px;
+    width: auto; 
+    height: auto;
     margin:15px;
 }
 
 .partner-message {
-    margin: 0 10% 0 10%;
+    margin: 0 var(--default-margin) 0 var(--default-margin);
     text-align: left;
-    line-height: 2.2;
+    line-height: 1.5;
     display:flex;
     flex-direction: column;
+}
+
+.partner-message div {
+    margin-top:10px;
 }
 
 .partner-message div > a {
@@ -360,12 +452,16 @@ h3 {
 /* get involved */
 
 .involved-steps {
-    margin: 0 10% 0 10%;
-    line-height: 2;
+    margin: 0 var(--default-margin) 0 var(--default-margin);
+    line-height: 1.5;
 }
 
 .involved-steps ol, ul {
     text-align: left;
+}
+
+.involved-steps li {
+    margin-top:10px;
 }
 
 .involved-steps iframe {
@@ -379,7 +475,7 @@ h3 {
 /* donate */
 
 .donate {
-    margin:0 10% 0 10%;
+    margin:0 var(--default-margin) 0 var(--default-margin);
     display:flex;
     flex-direction: column;
     justify-content: center; 
@@ -387,6 +483,10 @@ h3 {
     line-height:2;
 }
 
+.donate h2 {
+    line-height:1.2;
+    margin-bottom:10px;
+}
 
 .donate div {
     text-align:left;
@@ -402,8 +502,8 @@ h3 {
 
 /* connect w us */
 .connect-message {
-    margin: 0 10% 0 10%;
-    line-height: 2.2;
+    margin: 0 var(--default-margin) 0 var(--default-margin);
+    line-height: 1.8;
     display:flex;
     flex-direction: column;
 }
@@ -500,3 +600,115 @@ h3 {
     src: url('../fonts/ReadexPro-SemiBold.ttf') format('truetype');
     font-weight: 600; 
   }
+
+
+/* media sizes */
+
+@media (max-width: 1120px) {
+    :root {
+        --header-font-size: 38px;
+        --sub-font-size: 28px;
+    }
+
+    .large-title {
+        display:none;
+    }
+
+    .small-title {
+        display:flex;
+    }
+
+    .navbar-link {
+        font-size:13px;
+    }
+}
+
+@media (max-width: 875px) {
+    .large-feature {
+        display:none;
+    }
+
+    .small-feature {
+        display:block;
+    }
+
+    .grid-container1 {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .grid-container1 div:first-child > div:nth-child(2) {
+        display:none;
+    }
+
+    .navbar-link {
+        font-size:12px;
+    }
+}
+
+@media (max-width: 750px) {
+    :root {
+        --sub2-font-size: 18px;
+        --body-font-size: 15px;
+        --default-margin:0%;
+    }
+
+    .navbar {
+      display: none;
+    }
+
+    .mobile-navbar {
+        display:block;
+    }
+    .navbar-padding {
+        margin:0;
+    }
+
+    .grid-container1 {
+        margin: 0;
+    }
+    .faq {
+        margin: 0 5% 0 5%;
+    }
+    .partner-imgs img {
+        max-width: 125px;
+        max-height: 70px;
+        width: auto; 
+        height: auto;
+        margin:0;
+        margin-top:10px;
+    }
+
+    .aboutus-mission {
+        display:flex;
+        flex-direction: column;
+    }
+    .aboutus-mission div {
+        margin-top:10px;
+        text-align:center;
+    }
+
+    .aboutus-yearbooks iframe {
+        margin:10px;
+        width:90%;
+        aspect-ratio: 3 / 2;
+        border: none;
+    }
+    .wrapped {
+        padding:30px;
+    }
+
+    .home-testimonials div > div:nth-child(2) {
+        text-align: right;
+        font-size:12px;
+        line-height:1.2;
+    }
+
+  }
+
+@media (max-width: 300px) {
+  .default-button {
+    font-size:10px;
+    }
+}   
