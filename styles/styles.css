@@ -34,20 +34,7 @@ h6 {
 }
 
 .h1_colored {
-    font-size: var(--header-font-size);
-    padding-left: 10%;
-    padding-bottom: 5%;
-    margin:0;
-    color: #38B6FF;
-    text-align: left;
-    font-weight: bold;
-
-}
-.h1-title {
-    font-size: var(--header-font-size);
-    padding-left: 10%;;
-    margin:0;
-    text-align: left;
+    color: var(--branding-color);
 }
 
 h2 {
@@ -66,63 +53,95 @@ h3 {
 
 /* ------------------------------------------------------------------------ */
 /* home */
-.home-testimonials {
-    display:grid;
-    margin: 0 10% 0 10%;
-    text-align: left;
-    line-height: 1.8;
-    
+.slideshow-img {
+    height:400px;
+    transition: opacity 0.3s ease-in-out;
+    opacity:0;
 }
 
-#text-content {
-    padding: 20px;
+.slideshow-button {
+    border:none;
+    background: none;
+    cursor:pointer;
 }
 
-#slideshow {
-    margin-top: 20px;
+.fade-in {
+    opacity:1;
 }
-.home-imgs img {
-    height:40%;
-    width: 85%;
-    margin:10%;
-    border-radius: 20px;
-}
+
 .grid-container1 {
+    margin: 0 5% 0 5%;
     display: grid;
-    grid-template-columns: 0.8fr 1fr;
-    grid-gap: 20px;
+    grid-template-columns: 30% 50%;
+    grid-gap: 20%;
     place-items: center;
+}
 
+.grid-container1 div:first-child {
+    display:flex;
+    text-align: left;
+    flex-direction: column;
+}
+
+.grid-container1 div:first-child > div:nth-child(2) {
+    font-size: var(--sub2-font-size);
+    margin-top:30px;
+    margin-bottom:20px;
 }
 
 .grid-container2 {
+    margin: 0 10% 0 10%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     place-items: center;
-
 }
 
-.home-testimonials div {
-    margin:10px;
+.counter {
+    font-size: var(--header-font-size);
+    font-weight:bold;
 }
 
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-.home-mission {
-    display:grid;
+
+.home-testimonials {
     margin: 0 10% 0 10%;
-    text-align: center;
+    line-height: 1.8;
+}
+
+.home-testimonials div > div:nth-child(2) {
+    text-align: right;
+    font-size:14px;
+}
+
+.home-testimonials > div {
+    text-align: left;
+    margin:15px;
+}
+
+
+.home-mission {
+    margin: 0 10% 0 10%;
+}
+
+.home-mission > div:nth-child(2) {
+    font-size: 14px;
+    margin:5px;
+    margin-bottom:20px;
+}
+
+.home-mission > div:nth-child(3) {
+    text-align: left;
     line-height: 1.8; 
 }
 
-.home-mission div {
-    margin:10px;
+.feature-img img {
+    width: 90%;
+    margin:20px;
+    transition: border-radius 0.4s ease;
+    border-radius:5px;
+}
+.feature-img img:hover {
+    border-radius:25px;
 }
 /* ------------------------------------------------------------------------ */
 
@@ -133,7 +152,7 @@ h3 {
     width: 88%;
     padding-left: 6%;
     padding-right: 6%;
-    height: 80px;
+    height: 70px;
     top:0;
     left:0;
     display: flex;
@@ -155,7 +174,8 @@ h3 {
     color: var(--dark-blue-color);
     font-family: var(--default-font-family);
     padding:0.5rem 0.75rem 0.5rem 0.75rem;
-    margin-left:1rem;
+    margin-left:0.5rem;
+    font-size: 15px;
     transition: background-color 0.3s ease, border-radius 0.3s ease;
 }
 
@@ -164,7 +184,7 @@ h3 {
     color: var(--dark-branding-color);
     font-family: var(--default-font-family);
     font-weight:bold;
-    font-size: 18px;
+    font-size: 17px;
     display: flex;
     align-items: center;
 }
@@ -180,7 +200,7 @@ h3 {
 }
 
 .navbar-padding {
-    margin:80px;
+    margin:70px;
 }
 
 
