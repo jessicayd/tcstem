@@ -83,7 +83,7 @@ export default function Home() {
         <h2>Featured in</h2>
         <div className="feature-img">
           <a href="https://www.google.com/url?q=https%3A%2F%2Fflhsnews.com%2F7495%2Fnews%2Ftcstem-delivers-stem-education-to-underprivileged-students%2F&sa=D&sntz=1&usg=AOvVaw0mu6CImETK0GBAQEi-nLfg">
-            <img src="francislewis.jpeg" />
+            <img src="francislewis.jpeg" alt="francis lewis logo"/>
           </a>
           </div>
       </ColorWrapper>

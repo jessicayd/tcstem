@@ -16,15 +16,15 @@ export default function Home() {
       <ColorWrapper blue={true}> 
         <h2>Partnerships</h2>
         <div className="partner-imgs">
-          <img src="partner1.png" />
-          <img src="partner2.png" />
-          <img src="partner3.png" />
+          <Link target="_blank" href="https://joinjuno.com/"><img src="partner1.png" alt="juno logo"/></Link>
+          <Link target="_blank" href="https://www.wavelf.org/"><img src="partner2.png" alt="wave learning festival logo"/></Link>
+          <img src="partner3.png" alt="stem power logo" />
         </div>
         <br></br>
         <h2>Sponsors</h2>
         <div className="partner-imgs">
-          <img src="sponsor1.png" />
-          <img src="sponsor2.png" />
+          <img src="sponsor1.png" alt="coco logo" />
+          <img src="sponsor2.png" alt="sticker mule logo"/>
         </div>
       </ColorWrapper>
 

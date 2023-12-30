@@ -13,7 +13,7 @@ const Slideshow: React.FC<SlideshowProps> = ({ photos }) => {
   useEffect(() => {
     setTimeout(() => {
         setIsMounted(true);
-      }, 100);
+      }, 300);
   }, [index]);
 
 
