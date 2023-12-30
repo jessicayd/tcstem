@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState } from 'react';
+import ColorWrapper from './Wrapper/ColorWrapper';
 
 interface AccordionItem {
   question: string;
@@ -27,16 +28,19 @@ const Accordion: React.FC<AccordionProps> = ({ data }) => {
   return (
     <div>
       {data.map((item, index) => (
-        <div key={index} className={`${activeIndices.includes(index) ? 'active' : ''} accordion-item`}>
+        <div key={index} className={`accordion-item ${activeIndices.includes(index) ? 'active' : ''}`}>
           <div className='accordion-question' onClick={() => toggleAccordion(index)}>
             <span>{item.question}</span>
             {activeIndices.includes(index) ? <span>–</span> : <span>+</span>}
           </div>
-          {activeIndices.includes(index) && <div className="accordion-answer">{item.answer}</div>}
+          <div className={`accordion-answer-container ${activeIndices.includes(index) ? 'fade-in' : ''}`}>
+            <div className="accordion-answer">{item.answer}</div>
+          </div>
         </div>
       ))}
     </div>
   );
+  
 };
 
 export default Accordion;

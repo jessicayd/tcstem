@@ -331,21 +331,32 @@ h3 {
     background-color: white;
     transition: background-color 0.3s ease, border-bottom 0.3s ease;
     border-bottom:0.5px solid var(--dark-blue-color);
-}
-
-.accordion-item.active .accordion-question {
+  }
+  
+  .accordion-item.active .accordion-question {
     background-color: var(--light-blue-color);
-    border-bottom:none;
-}
-
-.accordion-answer {
-    text-align:left;
+    border-bottom: none;
+  }
+  
+  .accordion-answer-container {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out, opacity 0.2s ease-in-out;
+  }
+  
+  .accordion-item.active .accordion-answer-container {
+    max-height: 100%;
+    opacity: 1;
+  }
+  
+  .accordion-answer {
+    text-align: left;
     padding:10px 25px 10px 15px;
     margin:15px;
     margin-left:25px;
     border-left:0.5px solid var(--dark-blue-color);
-}
-
+  }
 
 
 /* ------------------------------------------------------------------------ */
