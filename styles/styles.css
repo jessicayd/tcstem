@@ -113,8 +113,8 @@ h3 {
 .home-testimonials div > div:nth-child(2) {
     text-align: right;
     font-size:14px;
-    line-height:1.2;
     padding-left:30%;
+    margin-top:5px;
 }
 
 .home-testimonials > div {
