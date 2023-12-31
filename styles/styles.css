@@ -661,6 +661,10 @@ h3 {
     .mobile-navbar {
         display:block;
     }
+
+    .mob-small-title {
+        display:none;
+    }
     .navbar-padding {
         margin:0;
     }
@@ -714,5 +718,12 @@ h3 {
 @media (max-width: 300px) {
   .default-button {
     font-size:10px;
+    }
+
+    .mob-small-title {
+        display:flex;
+    }
+    .mob-large-title {
+        display:none;
     }
 }   

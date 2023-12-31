@@ -16,7 +16,8 @@ export default function NavBar() {
   return (
     <div className="mobile-navbar">
         <div className="mobile-bar">
-            <Link href="/" className="navbar-title small-title"><Image src="/icon.png" alt="Icon" width={35} height={35}/>&nbsp;&nbsp;TCSTEM</Link>
+            <Link href="/" className="navbar-title mob-large-title"><Image src="/icon.png" alt="Icon" width={35} height={35}/>&nbsp;&nbsp;Teach Children STEM</Link>
+            <Link href="/" className="navbar-title mob-small-title"><Image src="/icon.png" alt="Icon" width={35} height={35}/>&nbsp;&nbsp;TCSTEM</Link>
             <button className="sidebar-button" onClick={toggleMobileMenu}>{isOpen ? <img src="ex.png" alt="x"/> : <img src="hamburger.png" alt="hamburger menu icon"/>}</button>
         </div>
         <aside className={`sidebar ${isOpen ? 'open' : ''}`}>
